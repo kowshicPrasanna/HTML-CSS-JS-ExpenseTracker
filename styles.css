@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(237,229,181,1) 0%, rgba(238,224,145,1) 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #444;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.summary div {
+    padding: 5px 10px;
+}
+
+.form-section, .filter-section, .entries-section {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#reset {
+    background-color: #6c757d;
+}
+
+#reset:hover {
+    background-color: #495057;
+}
+
+.filter-section label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.entries-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.entries-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fefefe;
+}
+
+.entries-section button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: white;
+    background: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.entries-section button:hover {
+    background-color: #a71d2a;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .entries-section li {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
